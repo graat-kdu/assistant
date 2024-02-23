@@ -8,7 +8,7 @@ const initialize = (octokitState: State<Octokit | null>) => {
   const code = new URLSearchParams(location.search).get("code");
   if (code) {
     fetch(
-      `https://script.google.com/macros/s/AKfycbxM7XIRKbIfOgAn0OJelhByDxwZJNnl-yifFgKkjXm6UnZs7Z5JA3T2a6RWiiSst5oS/exec?code=${code}&mode=${import.meta.env.MODE}`,
+      `https://script.google.com/macros/s/AKfycbxLRrEYZIYSegHNbwMVXpX9FaEFhoJv0MkXyj5DeAn_fr3oJVlimSRCyFULjd2QvhVK/exec?code=${code}&mode=${import.meta.env.MODE}`,
       {
         method: "GET",
         headers: {
